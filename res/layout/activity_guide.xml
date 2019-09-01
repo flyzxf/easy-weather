@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.tedu.weather.ui.GuideActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <!--  RadioGroup:里面装一组RadioButton ,里面装一组RadioButton的checked属性具有互斥性-->
+    <RadioGroup
+        android:id="@+id/rg_total_spot"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_spot_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_spot"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rb_spot_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_spot"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rb_spot_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_spot"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rb_spot_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_spot"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+</RelativeLayout>

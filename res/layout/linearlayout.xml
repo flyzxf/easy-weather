@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--线性布局:控件默认排列在一条线上
+    android:orientation="vertical"  控件按照垂直方向排列
+    android:orientation="horizontal"  控件按照水平方向排列
+    如果控件按照“水平”排列,layout_gravity属性可以设置为“top”“center”"bottom"
+    如果控件按照“垂直”排列,layout_gravity属性可以设置为“left”“center”"right"
+
+
+    使用layout_weight属性设置控件比例
+    如果控件按照“垂直”排列,android:layout_height="0dp"
+    如果控件按照“水平”排列,android:layout_width="0dp"
+-->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="button" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="button" />
+</LinearLayout>
